@@ -114,7 +114,7 @@ python3 scripts/preservation.py /path/to/preservation-document.pdf
 ### 输入（示意）
 
 - 案号：`（xxxx）xxx民初xxxx号`
-- 财产 1：银行账户（尾号 1234），期限 1 年
+- 财产 1：银行账户（尾号 xxxx），期限 1 年
 - 财产 2：不动产（某地址），期限 3 年
 
 ### 输出（日历事件示意）
