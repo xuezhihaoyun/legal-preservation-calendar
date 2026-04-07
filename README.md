@@ -127,6 +127,18 @@ python3 scripts/preservation.py /path/to/preservation-document.pdf
 | 日历 | `工作` |
 | 备注 | 案号、财产详情、到期日、续行提示 |
 
+## 截图预览
+
+### 命令行运行截图（脱敏示意）
+
+![命令行运行截图（脱敏示意）](./docs/images/terminal-run-demo.png)
+
+### 日历提醒截图（脱敏示意）
+
+![日历提醒截图（脱敏示意）](./docs/images/calendar-event-demo.png)
+
+> 当前仓库内置的是脱敏示意图，便于快速展示界面与字段布局。你可直接替换同路径文件为真实办案截图。
+
 ## 常见期限速查
 
 | 财产类型 | 常见保全期限 |
