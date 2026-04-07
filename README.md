@@ -113,7 +113,7 @@ python3 scripts/preservation.py /path/to/preservation-document.pdf
 
 ### 输入（示意）
 
-- 案号：`(2024)粤0305民初1234号`
+- 案号：`（xxxx）xxx民初xxxx号`
 - 财产 1：银行账户（尾号 1234），期限 1 年
 - 财产 2：不动产（某地址），期限 3 年
 
@@ -121,7 +121,7 @@ python3 scripts/preservation.py /path/to/preservation-document.pdf
 
 | 字段 | 示例 |
 |---|---|
-| 标题 | `【保全到期】(2024)粤0305民初1234号 - 银行账户（尾号1234）` |
+| 标题 | `【保全到期】（xxxx）xxx民初xxxx号 - 银行账户（尾号xxxx）` |
 | 提醒日期 | 到期日前 30 天 |
 | 事件类型 | 全天事件 |
 | 日历 | `工作` |
