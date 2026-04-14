@@ -5,7 +5,6 @@ version: 1.0.0
 author: 叶律师
 license: MIT
 ---
-
 # Legal Preservation Calendar
 
 A Claude Code Skill for tracking asset preservation deadlines in legal proceedings.
@@ -45,27 +44,31 @@ cp -r legal-preservation-calendar ~/.claude/skills/preservation-reminder
 ## Usage / 使用方法
 
 ### Method 1: Direct PDF Upload / 直接上传
+
 Upload a PDF file and say: "帮我创建保全提醒" or "preservation reminder"
 
 ### Method 2: Specify Path / 指定路径
+
 Say: "帮我创建保全提醒，文件在 /path/to/document.pdf"
 
 ### Method 3: Automatic Execution / 自动执行
+
 AI automatically processes and creates reminders, then cleans up temporary files.
 
 ## Calendar Event Format / 日历事件格式
 
-| Field | Content |
-|-------|---------|
-| Title / 标题 | 【保全到期】Case Number - Property Type (Identifier) |
-| Date / 日期 | 30 days before expiration (到期前30天) |
-| All Day / 全天 | Yes |
-| Calendar / 日历 | "工作" (Work) |
-| Notes / 备注 | Full case info, property details, renewal reminder |
+| Field           | Content                                              |
+| --------------- | ---------------------------------------------------- |
+| Title / 标题    | 【保全到期】Case Number - Property Type (Identifier) |
+| Date / 日期     | 30 days before expiration (到期前30天)               |
+| All Day / 全天  | Yes                                                  |
+| Calendar / 日历 | "工作" (Work)                                        |
+| Notes / 备注    | Full case info, property details, renewal reminder   |
 
 ## Handling Mixed Preservation Types / 混合保全处理
 
 When a document contains properties with different preservation periods:
+
 - Bank accounts / 银行账户: typically 1 year / 通常1年
 - Real estate / 不动产: typically 3 years / 通常3年
 - Equity / 股权: typically 3 years / 通常3年
@@ -76,6 +79,7 @@ Each property gets its own calendar reminder / 各财产分别创建提醒。
 ## Temporary File Cleanup Rules / 临时文件清理规则
 
 **Standard Workflow / 标准操作流程**:
+
 - MinerU-generated temporary MD files (in the same directory as the original PDF) **must be deleted immediately after calendar events are created** / MinerU 转换生成的临时 MD 文件（位于原 PDF 同目录）**必须在日历事件创建完成后立即删除**
 - Archive copies are preserved in `~/.claude/skills/mineru-ocr/archive/` for future reference / 归档副本保留在 `~/.claude/skills/mineru-ocr/archive/` 目录，如需查阅可调取
 - Only temporary working files are deleted; archives and history are preserved / 仅删除临时工作文件，不清除归档和历史记录
